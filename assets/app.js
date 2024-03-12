@@ -159,10 +159,61 @@ const main = () => {
 };
 main();
 
-const form = () => {};
+const form = () => {
+  let formTitle = document.createElement('h1')
+  formTitle.setAttribute('id', 'nome')
+  formTitle.innerText = 'Contato'
+  formTitle.style.marginLeft = '350px'
+
+  let form = document.createElement("form");
+  form.setAttribute("id", "contactForm");
+
+  let nameDiv = document.createElement("div");
+  let nameLabel = document.createElement("label");
+  nameLabel.textContent = "Nome:";
+  let nameInput = document.createElement("input");
+  nameInput.type = "text";
+  nameInput.placeholder = "Escreva seu nome";
+  nameInput.name = "name";
+  nameDiv.appendChild(nameLabel);
+  nameDiv.appendChild(nameInput);
+
+  let emailDiv = document.createElement("div");
+  let emailLabel = document.createElement("label");
+  emailLabel.textContent = "Email:";
+  let emailInput = document.createElement("input");
+  emailInput.type = "email";
+  emailInput.placeholder = "Escreva seu email";
+  emailInput.name = "email";
+  emailDiv.appendChild(emailLabel);
+  emailDiv.appendChild(emailInput);
+
+  let messageDiv = document.createElement("div");
+  let messageLabel = document.createElement("label");
+  messageLabel.textContent = "Mensagem:";
+  let messageInput = document.createElement("textarea");
+  messageInput.placeholder = "Escreva sua mensagem";
+  messageInput.name = "message";
+  messageDiv.appendChild(messageLabel);
+  messageDiv.appendChild(messageInput);
+
+  let submitButton = document.createElement("button");
+  submitButton.type = "submit";
+  submitButton.textContent = "Enviar";
+  form.appendChild(formTitle)
+  form.appendChild(nameDiv);
+  form.appendChild(emailDiv);
+  form.appendChild(messageDiv);
+  form.appendChild(submitButton);
+  body.append(form);
+
+
+};
 form();
 
-const footer = () => {};
+const footer = () => {
+
+};
 footer();
 
 particlesJS("particles", {

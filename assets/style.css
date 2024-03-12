@@ -181,3 +181,52 @@ main div {
     background-size: cover;
     background-position-y: -80px;
 }
+
+
+#contactForm {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #101120;
+    border-radius: 8px;
+    z-index: 2;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  #contactForm div {
+    margin-bottom: 10px;
+  }
+  
+  #contactForm label {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 50px;
+  }
+  
+  #contactForm input[type="text"],
+  #contactForm input[type="email"],
+  #contactForm textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  #contactForm button {
+    margin-top: 50px;
+    padding: 20px 20px;
+    margin-left: 350px;
+    background: #101120;
+    max-width: 200px;
+    color: #fff;
+    border: solid 1px #fff;
+    cursor: pointer;
+  }
+  
+  #contactForm button:hover {
+    background: #ffffff;
+    color: #000;
+  }
