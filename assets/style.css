@@ -188,12 +188,12 @@ main div {
     margin: 0 auto;
     padding: 20px;
     background: #101120;
-    border-radius: 8px;
     z-index: 2;
-    margin-top: 200px;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
-
+    border-top: solid #ffffff;
+    margin-bottom: 50px;
   }
   
   #contactForm div {
@@ -229,4 +229,19 @@ main div {
   #contactForm button:hover {
     background: #ffffff;
     color: #000;
+  }
+
+  #footer {
+    text-align: left;
+    padding: 20px;
+    background-color: #090a14;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    border-style: solid none none none;
+    border-width: 1px;
+  }
+  
+  #footer p {
+    margin: 0;
   }

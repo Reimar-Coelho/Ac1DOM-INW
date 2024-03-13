@@ -212,7 +212,16 @@ const form = () => {
 form();
 
 const footer = () => {
+  let footer = document.createElement("footer");
+  footer.setAttribute("id", "footer");
 
+  // Conteúdo do Footer
+  let footerContent = document.createElement("p");
+  footerContent.textContent = "© 2024 Reimar e Tadashi. Todos os direitos reservados.";
+  footer.appendChild(footerContent);
+
+  // Adicionando o footer ao body
+  body.appendChild(footer);
 };
 footer();
 
